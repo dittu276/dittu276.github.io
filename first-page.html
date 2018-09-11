@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bootstrap Visualization Dashboard</title> 
+<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="dashboard.html" style="background-color:darkolivegreen;color:white;font:bold;font-family:Georgia;padding:0.05in;border-radius:20px">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto" style="text-indent:25px">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="first-page.html">Max Temperature</a>
+            <a class="dropdown-item" href="second-page.html">Humidity</a>
+            <a class="dropdown-item" href="third-page.html">Cloudiness</a>
+            <a class="dropdown-item" href='fourth-page.html'>Windspeed</a>
+          </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="comparison-page.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data-page.html">Data</a>
+          </li>
+      </ul>
+    </nav>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8">
+                <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Max Temperature</h5>
+                          <hr>
+                          <img class="card-img-top img-fluid" id="main-img" src="fig1.png" align="center"/>
+                          <p class="card-text">As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude).<br> More interestingly, homwever, is the fact that the southern hemisphere tends to be warmer this time of the year than the northern hemisphere. This maybe due to the tilt of the earth at the time of the year this data was gathered</p>
+                          </div>
+                </div>
+        </div>
+        <div class="col-md-4">
+                <div class="card right-grid">
+                    <div class="card-body">
+                    <h5 class="card-title">Visualizations</h5>
+                    <hr>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-3">
+                                <p align=center><font size="1"><b>Vs. Max Temp</b></font></p>
+                                <a href="first-page.html">
+                                <img class="card-img" src="fig1.png">
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-sm-3">
+                                <p align=center><font size="1"><b>Vs. Humidity</b></font></p>
+                                <a href="second-page.html">
+                                <img class="card-img" src="fig2.png">
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-sm-3">
+                                <p align=center><font size="1"><b>Vs. Cloudiness</b></font></p>
+                                <a href="third-page.html">
+                                <img class="card-img" src="fig3.png">
+                                </a>  
+                            </div>
+                            <div class="col-md-6 col-sm-3">
+                                <p align=center><font size="1"><b>Vs. Windspeed</b></font></p>
+                                <a href="fourth-page.html">
+                                <img class="card-img" src="fig4.png">
+                                </a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>              
