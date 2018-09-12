@@ -37,11 +37,7 @@ body {
 .table th {
     text-align: center;   
  }
- @media only screen and (max-width: 786px){
-     #main-img{
-    width:350px;
-    height:350px;
-    }
+@media only screen and (max-width: 486px){
     .right-grid{
         height:100%
     }
