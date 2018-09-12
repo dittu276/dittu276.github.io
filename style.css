@@ -1,0 +1,45 @@
+body {
+    background: lightgray;
+}
+.card {
+    top:25px;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    bottom:0px;
+    background: white;
+}
+#main-img{
+    width:700px;
+    height:450px;
+}
+.card-title{
+        color: darkolivegreen;
+        font-size: x-large
+    }
+.right-grid{
+    height: 70%;
+    font-family:Georgia;
+    font:bold;
+}
+.nav-item{
+    font:bold;
+    font-size:large;
+}
+.card-compare{
+    position: relative;
+    margin: 1cm;
+    background: white;
+}
+.table td {
+    text-align: center;   
+ }
+.table th {
+    text-align: center;   
+ }
+ @media (max-width: 786px){
+    .right-grid{
+        height:100%
+    }
+}
+   
